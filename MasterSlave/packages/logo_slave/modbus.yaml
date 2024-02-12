@@ -1,0 +1,60 @@
+logo_modbus_slave:
+  modbus:
+    name: slave
+    type: tcp
+    host: 192.168.100.208
+    port: 502
+    switches:
+      - name: v17_on
+        unique_id: v17_on
+        write_type: coil
+        address: 9
+      - name: v17_off
+        unique_id: v17_off
+        write_type: coil
+        address: 10
+      - name: v18_on
+        unique_id: v18_on
+        write_type: coil
+        address: 17
+      - name: v18_off
+        unique_id: v18_off
+        write_type: coil
+        address: 18
+      - name: v19_on
+        unique_id: v19_on
+        write_type: coil
+        address: 25
+      - name: v19_off
+        unique_id: v19_off
+        write_type: coil
+        address: 26
+      - name: v20_on
+        unique_id: v20_on
+        write_type: coil
+        address: 33
+      - name: v20_off
+        unique_id: v20_off
+        write_type: coil
+        address: 34
+    binary_sensors:
+      - name: q17s
+        unique_id: q17s
+        input_type: coil
+        address: 8192
+        scan_interval: 5
+      - name: q18s
+        unique_id: q18s
+        input_type: coil
+        address: 8193
+        scan_interval: 5
+      - name: q19s
+        unique_id: q19s
+        input_type: coil
+        address: 8194
+        scan_interval: 5
+      - name: q20s
+        unique_id: q20s
+        input_type: coil
+        address: 8195
+        scan_interval: 5

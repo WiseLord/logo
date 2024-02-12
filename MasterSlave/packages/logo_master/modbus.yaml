@@ -1,0 +1,216 @@
+logo_modbus_master:
+  modbus:
+    name: master
+    type: tcp
+    host: 192.168.100.108
+    port: 502
+    switches:
+      - name: v1_on
+        unique_id: v1_on
+        write_type: coil
+        address: 9
+      - name: v1_off
+        unique_id: v1_off
+        write_type: coil
+        address: 10
+      - name: v2_on
+        unique_id: v2_on
+        write_type: coil
+        address: 17
+      - name: v2_off
+        unique_id: v2_off
+        write_type: coil
+        address: 18
+      - name: v3_on
+        unique_id: v3_on
+        write_type: coil
+        address: 25
+      - name: v3_off
+        unique_id: v3_off
+        write_type: coil
+        address: 26
+      - name: v4_on
+        unique_id: v4_on
+        write_type: coil
+        address: 33
+      - name: v4_off
+        unique_id: v4_off
+        write_type: coil
+        address: 34
+      - name: v5_on
+        unique_id: v5_on
+        write_type: coil
+        address: 41
+      - name: v5_off
+        unique_id: v5_off
+        write_type: coil
+        address: 42
+      - name: v6_on
+        unique_id: v6_on
+        write_type: coil
+        address: 49
+      - name: v6_off
+        unique_id: v6_off
+        write_type: coil
+        address: 50
+      - name: v7_on
+        unique_id: v7_on
+        write_type: coil
+        address: 57
+      - name: v7_off
+        unique_id: v7_off
+        write_type: coil
+        address: 58
+      - name: v8_on
+        unique_id: v8_on
+        write_type: coil
+        address: 65
+      - name: v8_off
+        unique_id: v8_off
+        write_type: coil
+        address: 66
+      - name: v9_on
+        unique_id: v9_on
+        write_type: coil
+        address: 73
+      - name: v9_off
+        unique_id: v9_off
+        write_type: coil
+        address: 74
+      - name: v10_on
+        unique_id: v10_on
+        write_type: coil
+        address: 81
+      - name: v10_off
+        unique_id: v10_off
+        write_type: coil
+        address: 82
+      - name: v11_on
+        unique_id: v11_on
+        write_type: coil
+        address: 89
+      - name: v11_off
+        unique_id: v11_off
+        write_type: coil
+        address: 90
+      - name: v12_on
+        unique_id: v12_on
+        write_type: coil
+        address: 97
+      - name: v12_off
+        unique_id: v12_off
+        write_type: coil
+        address: 98
+      - name: v13_on
+        unique_id: v13_on
+        write_type: coil
+        address: 105
+      - name: v13_off
+        unique_id: v13_off
+        write_type: coil
+        address: 106
+      - name: v14_on
+        unique_id: v14_on
+        write_type: coil
+        address: 113
+      - name: v14_off
+        unique_id: v14_off
+        write_type: coil
+        address: 114
+      - name: v15_on
+        unique_id: v15_on
+        write_type: coil
+        address: 121
+      - name: v15_off
+        unique_id: v15_off
+        write_type: coil
+        address: 122
+      - name: v16_on
+        unique_id: v16_on
+        write_type: coil
+        address: 129
+      - name: v16_off
+        unique_id: v16_off
+        write_type: coil
+        address: 130
+    binary_sensors:
+      - name: q1s
+        unique_id: q1s
+        input_type: coil
+        address: 8192
+        scan_interval: 5
+      - name: q2s
+        unique_id: q2s
+        input_type: coil
+        address: 8193
+        scan_interval: 5
+      - name: q3s
+        unique_id: q3s
+        input_type: coil
+        address: 8194
+        scan_interval: 5
+      - name: q4s
+        unique_id: q4s
+        input_type: coil
+        address: 8195
+        scan_interval: 5
+      - name: q5s
+        unique_id: q5s
+        input_type: coil
+        address: 8196
+        scan_interval: 5
+      - name: q6s
+        unique_id: q6s
+        input_type: coil
+        address: 8197
+        scan_interval: 5
+      - name: q7s
+        unique_id: q7s
+        input_type: coil
+        address: 8198
+        scan_interval: 5
+      - name: q8s
+        unique_id: q8s
+        input_type: coil
+        address: 8199
+        scan_interval: 5
+      - name: q9s
+        unique_id: q9s
+        input_type: coil
+        address: 8200
+        scan_interval: 5
+      - name: q10s
+        unique_id: q10s
+        input_type: coil
+        address: 8201
+        scan_interval: 5
+      - name: q11s
+        unique_id: q11s
+        input_type: coil
+        address: 8202
+        scan_interval: 5
+      - name: q12s
+        unique_id: q12s
+        input_type: coil
+        address: 8203
+        scan_interval: 5
+      - name: q13s
+        unique_id: q13s
+        input_type: coil
+        address: 8204
+        scan_interval: 5
+      - name: q14s
+        unique_id: q14s
+        input_type: coil
+        address: 8205
+        scan_interval: 5
+      - name: q15s
+        unique_id: q15s
+        input_type: coil
+        address: 8206
+        scan_interval: 5
+      - name: q16s
+        unique_id: q16s
+        input_type: coil
+        address: 8207
+        scan_interval: 5

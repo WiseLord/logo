@@ -1,0 +1,468 @@
+logo_switches_master:
+  switch:
+    - platform: template
+      switches:
+        q1:
+          unique_id: q1
+          value_template: "{{ is_state('binary_sensor.q1s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v1_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v1_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q1s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v1_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v1_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q1s
+                state: 'off'
+        q2:
+          unique_id: q2
+          value_template: "{{ is_state('binary_sensor.q2s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v2_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v2_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q2s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v2_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v2_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q2s
+                state: 'off'
+        q3:
+          unique_id: q3
+          value_template: "{{ is_state('binary_sensor.q3s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v3_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v3_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q3s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v3_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v3_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q3s
+                state: 'off'
+        q4:
+          unique_id: q4
+          value_template: "{{ is_state('binary_sensor.q4s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v4_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v4_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q4s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v4_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v4_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q4s
+                state: 'off'
+        q5:
+          unique_id: q5
+          value_template: "{{ is_state('binary_sensor.q5s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v5_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v5_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q5s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v5_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v5_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q5s
+                state: 'off'
+        q6:
+          unique_id: q6
+          value_template: "{{ is_state('binary_sensor.q6s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v6_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v6_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q6s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v6_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v6_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q6s
+                state: 'off'
+        q7:
+          unique_id: q7
+          value_template: "{{ is_state('binary_sensor.q7s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v7_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v7_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q7s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v7_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v7_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q7s
+                state: 'off'
+        q8:
+          unique_id: q8
+          value_template: "{{ is_state('binary_sensor.q8s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v8_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v8_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q8s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v8_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v8_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q8s
+                state: 'off'
+        q9:
+          unique_id: q9
+          value_template: "{{ is_state('binary_sensor.q9s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v9_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v9_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q9s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v9_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v9_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q9s
+                state: 'off'
+        q10:
+          unique_id: q10
+          value_template: "{{ is_state('binary_sensor.q10s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v10_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v10_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q10s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v10_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v10_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q10s
+                state: 'off'
+        q11:
+          unique_id: q11
+          value_template: "{{ is_state('binary_sensor.q11s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v11_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v11_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q11s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v11_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v11_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q11s
+                state: 'off'
+        q12:
+          unique_id: q12
+          value_template: "{{ is_state('binary_sensor.q12s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v12_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v12_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q12s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v12_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v12_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q12s
+                state: 'off'
+        q13:
+          unique_id: q13
+          value_template: "{{ is_state('binary_sensor.q13s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v13_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v13_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q13s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v13_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v13_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q13s
+                state: 'off'
+        q14:
+          unique_id: q14
+          value_template: "{{ is_state('binary_sensor.q14s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v14_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v14_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q14s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v14_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v14_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q14s
+                state: 'off'
+        q15:
+          unique_id: q15
+          value_template: "{{ is_state('binary_sensor.q15s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v15_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v15_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q15s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v15_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v15_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q15s
+                state: 'off'
+        q16:
+          unique_id: q16
+          value_template: "{{ is_state('binary_sensor.q16s', 'on') }}"
+          turn_on:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v16_on
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v16_on
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q16s
+                state: 'on'
+          turn_off:
+            - service: switch.turn_on
+              target:
+                entity_id: switch.v16_off
+            - delay:
+                milliseconds: 50
+            - service: switch.turn_off
+              target:
+                entity_id: switch.v16_off
+            - service: python_script.set_state
+              data:
+                entity_id: binary_sensor.q16s
+                state: 'off'
